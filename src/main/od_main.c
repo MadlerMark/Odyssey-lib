@@ -20,7 +20,7 @@ t_stats_t t_stats[WORKERS_PER_MACHINE];
 c_stats_t c_stats[CLIENTS_PER_MACHINE];
 remote_qp_t ***rem_qp;  //[MACHINE_NUM][WORKERS_PER_MACHINE][QP_NUM];
 atomic_bool qps_are_set_up;
-FILE* client_log[CLIENTS_PER_MACHINE];
+extern FILE* client_log[CLIENTS_PER_MACHINE];
 struct wrk_clt_if interface[WORKERS_PER_MACHINE];
 uint64_t last_pulled_req[SESSIONS_PER_MACHINE];
 uint64_t last_pushed_req[SESSIONS_PER_MACHINE];
